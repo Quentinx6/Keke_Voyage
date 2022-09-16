@@ -5,7 +5,7 @@
 ---
 
 |NOM             |TYPE                           |DESIGNATION                  |
-|////////////////|///////////////////////////////|/////////////////////////////|
+|----------------|-------------------------------|-----------------------------|
 |ID_Client       |Alphanumérique                 |ID du client                 |
 |Nom             |Alphanumérique                 |Nom du client                |
 |Prénom          |Alphanumérique                 |Prénom du client             |
