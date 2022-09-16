@@ -18,7 +18,7 @@
 |////////////////|///////////////////////////////|/////////////////////////////|
 |ID_vol          |Alphanumérique|ID du vol|
 |Compagnie       |Alphanumérique|ID de la compagnie assurant le vol|
-|Date de départ  |Alphanumérique|Date et heure de départ du vol|
+|Date de départ  |Datetime|Date et heure de départ du vol|
 |Aéroport de départ|Alphanumérique|ID de l'aéroport de départ du vol|
 |Aéroport d'arrivée|Alphanumérique|ID de l'aéroport d'arrivée du vol|
 |Ouvrir_vol      |Boolean|Ouverture de la réservation par la compagnie|
@@ -31,8 +31,8 @@
 |Vols à l'arrivée|Alphanumérique|ID des vols à l'arrivée de l'aéroport|
 |////////////////|///////////////////////////////|/////////////////////////////|
 |ID_Escale       |Alphanumérique|ID de l'aéroport de l'escale du vol|
-|Heure d'arrivée  |Alphanumérique|Heure d'arrivée du vol|
-|Heure de départ  |Alphanumérique|Heure de départ du vol|
+|Heure d'arrivée  |Time|Heure d'arrivée du vol|
+|Heure de départ  |Time|Heure de départ du vol|
 
 ---
 
