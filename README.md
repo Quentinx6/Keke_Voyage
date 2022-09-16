@@ -2,8 +2,10 @@
 
 ## Dictionnaire de données
 
+---
+
 |NOM             |TYPE                           |DESIGNATION                  |
-|----------------|-------------------------------|-----------------------------|
+|////////////////|///////////////////////////////|/////////////////////////////|
 |ID_Client       |Alphanumérique                 |ID du client                 |
 |Nom             |Alphanumérique                 |Nom du client                |
 |Prénom          |Alphanumérique                 |Prénom du client             |
@@ -23,7 +25,7 @@
 |Fermer_vol      |Boolean|Fermeture de la réservation par la compagnie|
 |Escale          |Alphanumérique|ID de l'aéroport de l'escale|
 |////////////////|///////////////////////////////|/////////////////////////////|
-|ID Aéroport     |Alphanumérique|ID de l'aéroport|
+|ID_Aéroport     |Alphanumérique|ID de l'aéroport|
 |Villes desservies|Alphanumérique|Villes desservies par l'aéroport|
 |Vols au départ  |Alphanumérique|ID des vols au départ de l'aéroport|
 |Vols à l'arrivée|Alphanumérique|ID des vols à l'arrivée de l'aéroport|
@@ -31,3 +33,19 @@
 |ID_Escale       |Alphanumérique|ID de l'aéroport de l'escale du vol|
 |Date d'arrivée  |Alphanumérique|Date et heure d'arrivée du vol|
 |Date de départ  |Alphanumérique|Date et heure de départ du vol|
+
+---
+
+## Régles de gestion
+
+---
+
+* Afin que le client passe une commande, nous demandons son nom, son prénom, sa date de naissance, son adresse mail et son numéro de téléphone puis se créer automatique un id_client afin de l'identifier plus facilement par la suite.
+
+* Lorsqu'un client éffectue une commande donc dans notre cas éffectue une reservation de vol, on lui confere le numéro de vol (ID_vol) le nom de la compagnie, la date de départ, l'heure de départ, le lieu qu'il aura choisi via la ville (ID_aeroport), les éventuelles escales (pas obligatoirement), destination. 
+
+* S'il le client recoit bien le billet cela veut donc dire que la compagnie a créé le vol et qu'il est bien disponible (ouvrirVol = true). La compagnie peut toujours fermer le vol (fermerVol = true) dans ce cas le vol n'est plus disponible et le programme avertira automatique le client que son vol identifer grâce à son ID est annulé. 
+
+*  Une escale est un héritage de l'aéroport étant donné que pour les passager cette escale (aéroport) n'est pas leur destination final, d'ou le nom escale.
+
+*  
