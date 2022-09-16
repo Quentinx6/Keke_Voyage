@@ -8,10 +8,10 @@
 |DDN             |Date                           |Date de naissance du client  |
 |Email           |Alphanumérique                 |Adresse mail du client       |
 |Téléphone       |Alphanumérique                 |Numéro de téléphone du client|
-|----------------|-------------------------------|-----------------------------|
+|////////////////|///////////////////////////////|/////////////////////////////|
 |ID_Compagnie    |Alphanumérique|ID de la compagnie aérienne|
 |Nom             |Alphanumérique|Nom de la compagnie aérienne|
-|----------------|-------------------------------|-----------------------------|
+|////////////////|///////////////////////////////|/////////////////////////////|
 |ID_vol          |Alphanumérique|ID du vol|
 |Compagnie       |Alphanumérique|ID de la compagnie assurant le vol|
 |Date de départ  |Alphanumérique|Date et heure de départ du vol|
@@ -20,12 +20,12 @@
 |Ouvrir_vol      |Boolean|Ouverture de la réservation par la compagnie|
 |Fermer_vol      |Boolean|Fermeture de la réservation par la compagnie|
 |Escale          |Alphanumérique|ID de l'aéroport de l'escale|
-|----------------|-------------------------------|-----------------------------|
+|////////////////|///////////////////////////////|/////////////////////////////|
 |ID Aéroport     |Alphanumérique|ID de l'aéroport|
 |Villes desservies|Alphanumérique|Villes desservies par l'aéroport|
 |Vols au départ  |Alphanumérique|ID des vols au départ de l'aéroport|
 |Vols à l'arrivée|Alphanumérique|ID des vols à l'arrivée de l'aéroport|
-|----------------|-------------------------------|-----------------------------|
+|////////////////|///////////////////////////////|/////////////////////////////|
 |ID_Escale       |Alphanumérique|ID de l'aéroport de l'escale du vol|
 |Date d'arrivée  |Alphanumérique|Date et heure d'arrivée du vol|
 |Date de départ  |Alphanumérique|Date et heure de départ du vol|
