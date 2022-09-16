@@ -31,8 +31,8 @@
 |Vols à l'arrivée|Alphanumérique|ID des vols à l'arrivée de l'aéroport|
 |////////////////|///////////////////////////////|/////////////////////////////|
 |ID_Escale       |Alphanumérique|ID de l'aéroport de l'escale du vol|
-|Date d'arrivée  |Alphanumérique|Date et heure d'arrivée du vol|
-|Date de départ  |Alphanumérique|Date et heure de départ du vol|
+|Heure d'arrivée  |Alphanumérique|Heure d'arrivée du vol|
+|Heure de départ  |Alphanumérique|Heure de départ du vol|
 
 ---
 
