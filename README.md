@@ -40,50 +40,49 @@
 
 ### Client
 
-* Afin que le client passe une commande, nous demandons son nom, son prénom, sa date de naissance, son adresse mail et son numéro de téléphone puis se créer automatique un id_client afin de l'identifier plus facilement par la suite.
+* Afin que le client passe une commande, nous demandons son nom, son prénom, sa date de naissance, son adresse mail et son numéro de téléphone puis se créer automatiquement un id_client afin de l'identifier plus facilement par la suite.
 
-* Lorsqu'un client éffectue une commande donc dans notre cas éffectue une reservation de vol, on lui confere le numéro de vol (ID_vol) le nom de la compagnie, la date de départ, l'heure de départ, le lieu qu'il aura choisi via la ville (ID_aeroport), les éventuelles escales (pas obligatoirement), destination. 
+* Lorsqu'un client effectue une commande donc dans notre cas effectue une réservation de vol, on lui confère le numéro de vol (ID_vol) le nom de la compagnie, la date de départ, l'heure de départ, le lieu qu'il aura choisi via la ville (ID_aeroport), les éventuelles escales (pas obligatoirement), destination.
 
-* Un client peut réserver plusieur billet ainsi un client n'est pas forcement un passager. Le client peut également réservé pour une personne tierce.
-
+* Un client peut réserver plusieurs billet ainsi un client n'est pas forcément un passager. Le client peut également réserver pour une personne tierce.
 
 ### Passager
 
-* Le passager peut être un client, dans le sens ou c'est la même personne qui a commander un billet d'avion pour lui même. 
+* Le passager peut être un client, dans le sens ou c'est la même personne qui a commander un billet d'avion pour lui-même.
 
-* Sans réservation, il n'y a pas de passager. Donc sans client pas de passager, passager dépend de client. 
+* Sans réservation, il n'y a pas de passager. Donc sans client pas de passager, le passager dépend de client.
 
 * Un numéro de réservation par réservation, donc un numéro de réservation est un passager.
 
 ### Compagnie
 
-* Si le client recoit bien le billet cela veut donc dire que la compagnie a créé le vol et qu'il est bien disponible (ouvrirVol = true). La compagnie peut toujours fermer le vol (fermerVol = true) dans ce cas le vol n'est plus disponible et le programme avertira automatique le client que son vol identifer grâce à son ID est annulé. 
+* Si le client reçoit bien le billet cela veut donc dire que la compagnie a créé le vol et qu'il est bien disponible (ouvrirVol = true). La compagnie peut toujours fermer le vol (fermerVol = true) dans ce cas le vol n'est plus disponible et le programme avertira automatique le client que son vol identifier grâce à son ID est annulé.
 
-* Les vols depende des compagnies, chaque compagnie possède ces propres vols.
+* Les vols dépende des compagnies, chaque compagnie possède ces propres vols.
 
 ### Vol
 
-* Sans réservation donc sans client, aucun passager dans ce sens, aucune utilité à éffectuer le vol à vide.
+* Sans réservation donc sans client, aucun passager dans ce sens, aucune utilité à effectuer le vol à vide.
 
-* Vol dépend de la compagnie, il est créer par la compagnie et peut être aussi supprimer. 
+* Vol dépend de la compagnie, il est créé par la compagnie et peut être aussi supprimer.
 
-* Un vol possède un point de départ et point d'arrivé (c'est mieux), donc un vol possède un aéroport de départ et un aéroport d'arrivé.
+* Un vol possède un point de départ et point d'arriver (c'est mieux), donc un vol possède un aéroport de départ et un aéroport d'arrivé.
 
-* Un vol possède une date et une heure de départ et également une date et une heure d'arrivé.
+* Un vol possède une date et une heure de départ et également une date et une heure d'arriver.
 
 * Le vol possède donc une destination.
 
-### Aéroport 
+### Aéroport
 
-* Un aéroport peut avoir plusieurs vols. 
+* Un aéroport peut avoir plusieurs vols.
 
-* Un aéroport dessert plusieurs villes (sinon peut de but de prendre l'avion).
+* Un aéroport dessert plusieurs villes (sinon peu de buts de prendre l'avion).
 
-### Escale 
+### Escale
 
-*  Une escale est un héritage de l'aéroport étant donné que pour les passager cette escale (aéroport) n'est pas leur destination final, d'ou le nom escale.
+* Une escale est un héritage de l'aéroport étant donné que pour les passagers cette escale (aéroport) n'est pas leur destination final, d'où le nom escale.
 
-* L'escale possède une heure d'arrivé, une heure de départ et un id (ID_escale).
+* L'escale possède une heure d'arriver, une heure de départ et un id (ID_escale).
 
 ---
 
