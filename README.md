@@ -223,5 +223,3 @@ CREATE TABLE Decollage(
 * https://infocenter-archive.sybase.com/help/index.jsp?topic=/com.sybase.stf.poweramc.docs_12.0.0/html/mcgu/mcgup29.htm
 
 * https://experienceleague.adobe.com/docs/contributor/contributor-guide/writing-essentials/markdown.html?lang=fr
-
-* 
